@@ -1,0 +1,49 @@
+{
+  // "workbench.iconTheme": "vscode-icons",
+  // "workbench.colorTheme": "Dracula",
+  "svn.defaultCheckoutDirectory": "D:\\Program Files\\TortoiseSVN\\bin",
+  "[javascript]": {
+    "editor.defaultFormatter": "svipas.prettier-plus"
+  },
+  "search.followSymlinks": false,
+  "beautify.config": "",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.format.enable": true,
+  //autoFix默认开启，只需输入字符串数组即可
+  "eslint.validate": [
+    "javascript",
+    "vue",
+    "html"
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "editor.tabSize": 2,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.validate.enable": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "git.confirmSync": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.ignoreWindowsGit27Warning": true,
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "files.autoSave": "afterDelay",
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
