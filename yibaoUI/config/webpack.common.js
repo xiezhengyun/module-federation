@@ -114,10 +114,11 @@ module.exports = (isProduction) => {
         filename: 'remoteEntry.js',
         exposes: {
           // './Content': './src/components/Content',
-          // './Button': './src/components/Button',
-          './tableGrid':  '/src/components/table/index'// 组件
+          './Button': './src/components/Button',
+          './tableGrid':  './src/components/tableGrid/index'// 组件
           // './Utils': './src/utils' // 纯函数
-        }
+        },
+        shared: require('../package.json').dependencies
       }),
       new HtmlWebpackPlugin({
         title: 'base-vue-cli',
@@ -126,7 +127,7 @@ module.exports = (isProduction) => {
       new VueLoaderPlugin()
     ],
     optimization: {
-      runtimeChunk: true, // 模块抽取，利用浏览器缓存
+      runtimeChunk: false, // 模块抽取，利用浏览器缓存
       minimizer: [
         new TerserWebpackPlugin({
           extractComments: false // 不要注释生成的文件

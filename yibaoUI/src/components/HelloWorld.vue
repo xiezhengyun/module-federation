@@ -24,7 +24,7 @@ export default {
     msg: String
   },
   components: {
-    tableGrid: () => import('./table/index')
+    tableGrid: () => import('./tableGrid/index.vue')
   },
   data () {
     const tableGrid = renderTaxationTable.call(this)

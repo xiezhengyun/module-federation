@@ -10,8 +10,8 @@
       <div class="app-label">
         #remote-component [REMOTE]
       </div>
-      <!-- <content-element />
-      <button-element>remote button</button-element> -->
+      <!-- <content-element /> -->
+      <button-element></button-element> 
       <div v-for="(table, tableName) in tableGrid" :key="tableName">
         <table-grid
           :cell-class-func="cellClassFunc"
@@ -32,12 +32,13 @@
 <script>
 import { renderTaxationTable } from './tableHeader';
 export default {
-  name: 'HelloWorld',
+  name: 'layout',
   props: {
     msg: String,
   },
   components: {
     tableGrid: () => import('yibaoUI/tableGrid'),
+    buttonElement: () => import('yibaoUI/Button'),
   },
   data() {
     const tableGrid = renderTaxationTable.call(this);

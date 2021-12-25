@@ -1,5 +1,5 @@
 import Vue from "vue";
-import Layout from './Layout.vue';
+import App from './App';
 
 // const Content = () => import("yibaoUI/Content");
 // const Button = () => import("yibaoUI/Button");
@@ -7,7 +7,9 @@ import Layout from './Layout.vue';
 
 // Vue.component("content-element", Content);
 // Vue.component("button-element", Button);
-
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
 new Vue({
-  render: h => h(Layout),
+  render: h => h(App),
 }).$mount('#app')
